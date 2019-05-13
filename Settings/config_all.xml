@@ -364,6 +364,7 @@
 			<item Command="---Menu Separator---" />
 			<item Command="Activate Snippet Window" />
 			<item Command="---Menu Separator---" />
+			<item Command="Astyle" Allocated="1" />
 			<item Command="Custom Commands..." />
 		</Menu>
 		<Menu
@@ -613,7 +614,6 @@
 			<item Command="Cut Word" Keycode="(C)," />
 			<item Command="Insert Line Before Next" Keycode="(C)Space" />
 			<item Command="Join Lines" Keycode="(C)J" />
-			<item Command="Insert New Line" Keycode="(C)Enter" />
 			<item Command="Cut To Clip..." Keycode="(CS)X" />
 			<item Command="Copy To Clip..." Keycode="(C)Del" />
 			<item Command="Paste From Clip..." Keycode="(C)Ins" />
@@ -633,9 +633,30 @@
 			<item Command="Simple Tab" Keycode="(CA)Tab" />
 			<item Command="Search Backward" Keycode="" />
 			<item Command="Search Forward" Keycode="" />
+			<item Command="AutoExpand" Keycode="(C)Enter" Allocated="1" />
+			<item Command="Astyle" Keycode="(CA)F" Allocated="1" />
 		</Main>
 	</Keymaps>
 	<CustomCommands>
+		<Command
+			Name="Astyle"
+			RunText="D:\Tools\AStyle\bin\AStyle.exe --style=ansi -S -N -L -xC80 -z2 --convert-tabs -H -p -U --align-pointer=name --quiet --suffix=none %f"
+			WorkingDir=""
+			NormalWindow="1"
+			CaptureOutput="0"
+			PasteOutput="0"
+			SaveFilesFirst="0"
+			PauseWhenDone="1"
+			BeepWhenDone="0"
+			WaitUntilDone="0"
+			ReloadFiles="0"
+			ExitToWindows="0"
+			ParseOutput="0"
+			LineThenFile="0"
+			RegexType="Source Insight"
+			Preset="0"
+			ParsePattern=""
+			/>
 		<Command
 			Name="Build Project"
 			RunText="D:\Keil_v5\UV4\UV4.exe %f"
@@ -7724,14 +7745,14 @@
 		<SearchDialogs>
 			<Search
 				RegexType="Source Insight"
-				IgnoreCase="1"
+				IgnoreCase="0"
 				UseRegexp="0"
 				WrapAround="1"
 				SelectMatch="1"
 				FindNonMatch="0"
 				FindOnePerLine="0"
 				FindBackward="0"
-				FindWholeWords="0"
+				FindWholeWords="1"
 				TouchFiles="0"
 				ReplacePreserveCase="0"
 				ReplaceConfirm="1"
@@ -7946,7 +7967,7 @@
 		<SymbolTypes All="1" />
 	</ProjectReport>
 	<SymbolPane
-		Width="417"
+		Width="213"
 		TextColor="#8b93a4"
 		BackColor="#191c20"
 		ShowChanges="1"
@@ -8570,7 +8591,7 @@
 				ViewMode="GraphHorizontal"
 				IsLocked="0"
 				ExcludeMacros="0"
-				ShowMetrics="1"
+				ShowMetrics="0"
 				ShowGraphDetails="1"
 				GroupMultipleRefs="1"
 				ShowLineNumbers="0"
@@ -8583,7 +8604,7 @@
 				<SymbolTypes All="1" />
 				<CodeMetricsFilter CodeMetricsType="1" MinValue="0" MaxValue="0" />
 				<ViewRelationRules
-					ForTypes="Types Used"
+					ForTypes="Contents"
 					ForFunctions="References"
 					ForVariables="References"
 					ForClasses="Inheritance"

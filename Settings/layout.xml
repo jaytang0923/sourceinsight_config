@@ -20,7 +20,7 @@
 		<TabTray IsVisible="0" />
 		<DockZones>
 			<Left>
-				<Rect Left="0" Top="73" Right="4" Bottom="511" />
+				<Rect Left="0" Top="73" Right="4" Bottom="408" />
 				<Contents/>
 			</Left>
 			<Top>
@@ -28,7 +28,7 @@
 				<Contents/>
 			</Top>
 			<Right>
-				<Rect Left="1067" Top="73" Right="1366" Bottom="511" />
+				<Rect Left="1089" Top="73" Right="1366" Bottom="408" />
 				<Contents>
 					<PanelHost
 						Title="Project Files"
@@ -39,7 +39,7 @@
 						PanelCount="4"
 						idPalActive="ProjectFilePanel"
 						>
-						<WindowRect Left="1071" Top="73" Right="1366" Bottom="511" />
+						<WindowRect Left="1093" Top="73" Right="1366" Bottom="408" />
 						<PredockRect Left="690" Top="231" Right="1240" Bottom="731" />
 						<Panels>
 							<Panel
@@ -82,10 +82,10 @@
 				</Contents>
 			</Right>
 			<Bottom>
-				<Rect Left="0" Top="511" Right="1366" Bottom="728" />
+				<Rect Left="0" Top="408" Right="1366" Bottom="728" />
 				<Contents>
 					<PanelHost
-						Title="tool_i2c_read_with_extra"
+						Title="ugui_test"
 						id="ContextPanelHost"
 						IsHidden="0"
 						PctTrans="0"
@@ -93,7 +93,7 @@
 						PanelCount="1"
 						idPalActive="ContextPanel"
 						>
-						<WindowRect Left="0" Top="515" Right="1072" Bottom="728" />
+						<WindowRect Left="0" Top="412" Right="855" Bottom="728" />
 						<PredockRect Left="665" Top="375" Right="1015" Bottom="675" />
 						<Panels>
 							<Panel id="ContextPanel" IsHidden="0" ViewToolbar="1" />
@@ -108,7 +108,7 @@
 						PanelCount="1"
 						idPalActive="SnippetPanel"
 						>
-						<WindowRect Left="683" Top="515" Right="1366" Bottom="728" />
+						<WindowRect Left="683" Top="412" Right="1366" Bottom="728" />
 						<PredockRect Left="385" Top="348" Right="935" Bottom="678" />
 						<Panels>
 							<Panel
@@ -134,7 +134,7 @@
 						PanelCount="1"
 						idPalActive="RelationPanel"
 						>
-						<WindowRect Left="1072" Top="515" Right="1366" Bottom="728" />
+						<WindowRect Left="855" Top="412" Right="1366" Bottom="728" />
 						<PredockRect Left="586" Top="339" Right="936" Bottom="739" />
 						<Panels>
 							<Panel
