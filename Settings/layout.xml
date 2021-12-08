@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SourceInsightLayout
-	AppVer="4.00.0096"
+	AppVer="4.00.0084"
 	AppVerMinReader="4.00.0030"
 	>
 	<!-- This is a Source Insight desktop layout file. -->
@@ -10,25 +10,25 @@
 		IsFullScreen="0"
 		>
 		<WindowRect Left="-8" Top="-8" Right="1374" Bottom="736" />
-		<NormalWindowRect Left="544" Top="0" Right="1392" Bottom="728" />
+		<NormalWindowRect Left="186" Top="0" Right="968" Bottom="708" />
 	</MainWindow>
 	<Options>
 		<WindowTabOptions IsVisible="1" ShowPathInfo="1" SortOrder="Usage" />
 	</Options>
 	<PanelArea>
-		<WorkArea Left="0" Top="69" Right="1366" Bottom="728" />
+		<WorkArea Left="0" Top="70" Right="1366" Bottom="702" />
 		<TabTray IsVisible="0" />
 		<DockZones>
 			<Left>
-				<Rect Left="0" Top="73" Right="4" Bottom="408" />
+				<Rect Left="0" Top="74" Right="4" Bottom="549" />
 				<Contents/>
 			</Left>
 			<Top>
-				<Rect Left="0" Top="69" Right="1366" Bottom="73" />
+				<Rect Left="0" Top="70" Right="1366" Bottom="74" />
 				<Contents/>
 			</Top>
 			<Right>
-				<Rect Left="1089" Top="73" Right="1366" Bottom="408" />
+				<Rect Left="1132" Top="74" Right="1366" Bottom="549" />
 				<Contents>
 					<PanelHost
 						Title="Project Files"
@@ -39,22 +39,9 @@
 						PanelCount="4"
 						idPalActive="ProjectFilePanel"
 						>
-						<WindowRect Left="1093" Top="73" Right="1366" Bottom="408" />
-						<PredockRect Left="690" Top="231" Right="1240" Bottom="731" />
+						<WindowRect Left="1136" Top="74" Right="1366" Bottom="549" />
+						<PredockRect Left="100" Top="100" Right="650" Bottom="600" />
 						<Panels>
-							<Panel
-								id="ProjectFilePanel"
-								IsHidden="0"
-								ViewToolbar="1"
-								>
-								<Columns>
-									<Column0 ID="0" Width="120" />
-									<Column1 ID="1" Width="96" />
-									<Column2 ID="2" Width="96" />
-									<Column3 ID="3" Width="96" />
-									<Column4 ID="4" Width="96" />
-								</Columns>
-							</Panel>
 							<Panel
 								id="ProjectSymbolPanel"
 								IsHidden="0"
@@ -77,15 +64,28 @@
 									<Column1 ID="0" Width="96" />
 								</Columns>
 							</Panel>
+							<Panel
+								id="ProjectFilePanel"
+								IsHidden="0"
+								ViewToolbar="1"
+								>
+								<Columns>
+									<Column0 ID="0" Width="120" />
+									<Column1 ID="1" Width="96" />
+									<Column2 ID="2" Width="96" />
+									<Column3 ID="3" Width="96" />
+									<Column4 ID="4" Width="96" />
+								</Columns>
+							</Panel>
 						</Panels>
 					</PanelHost>
 				</Contents>
 			</Right>
 			<Bottom>
-				<Rect Left="0" Top="408" Right="1366" Bottom="728" />
+				<Rect Left="0" Top="549" Right="1366" Bottom="702" />
 				<Contents>
 					<PanelHost
-						Title="ugui_test"
+						Title="calcBatteryVol"
 						id="ContextPanelHost"
 						IsHidden="0"
 						PctTrans="0"
@@ -93,36 +93,10 @@
 						PanelCount="1"
 						idPalActive="ContextPanel"
 						>
-						<WindowRect Left="0" Top="412" Right="855" Bottom="728" />
-						<PredockRect Left="665" Top="375" Right="1015" Bottom="675" />
+						<WindowRect Left="0" Top="553" Right="1015" Bottom="702" />
+						<PredockRect Left="1105" Top="570" Right="1455" Bottom="870" />
 						<Panels>
 							<Panel id="ContextPanel" IsHidden="0" ViewToolbar="1" />
-						</Panels>
-					</PanelHost>
-					<PanelHost
-						Title="Snippets"
-						id="SnippetPanelHost"
-						IsHidden="1"
-						PctTrans="0"
-						IsMinimized="0"
-						PanelCount="1"
-						idPalActive="SnippetPanel"
-						>
-						<WindowRect Left="683" Top="412" Right="1366" Bottom="728" />
-						<PredockRect Left="385" Top="348" Right="935" Bottom="678" />
-						<Panels>
-							<Panel
-								id="SnippetPanel"
-								IsHidden="0"
-								ViewToolbar="1"
-								>
-								<Columns>
-									<Column0 ID="0" Width="96" />
-									<Column1 ID="1" Width="192" />
-									<Column2 ID="2" Width="96" />
-									<Column3 ID="3" Width="96" />
-								</Columns>
-							</Panel>
 						</Panels>
 					</PanelHost>
 					<PanelHost
@@ -134,8 +108,8 @@
 						PanelCount="1"
 						idPalActive="RelationPanel"
 						>
-						<WindowRect Left="855" Top="412" Right="1366" Bottom="728" />
-						<PredockRect Left="586" Top="339" Right="936" Bottom="739" />
+						<WindowRect Left="1015" Top="556" Right="1366" Bottom="702" />
+						<PredockRect Left="100" Top="400" Right="450" Bottom="800" />
 						<Panels>
 							<Panel
 								id="RelationPanel"
@@ -146,10 +120,10 @@
 									ViewMode="GraphHorizontal"
 									IsLocked="0"
 									ExcludeMacros="0"
-									ShowMetrics="0"
+									ShowMetrics="1"
 									ShowGraphDetails="1"
 									GroupMultipleRefs="1"
-									ShowLineNumbers="0"
+									ShowLineNumbers="1"
 									ShowFileName="1"
 									AutoExpandLevels="1"
 									CodeMetricsType="1"
@@ -168,7 +142,9 @@
 								</RelationOptions>
 								<Columns>
 									<Column0 ID="0" Width="192" />
-									<Column1 ID="2" Width="144" />
+									<Column1 ID="1" Width="96" />
+									<Column2 ID="2" Width="144" />
+									<Column3 ID="3" Width="96" />
 								</Columns>
 							</Panel>
 						</Panels>
@@ -190,101 +166,6 @@
 				<PredockRect Left="100" Top="210" Right="500" Bottom="400" />
 				<Panels>
 					<Panel id="BookmarkPanel" IsHidden="0" ViewToolbar="1" />
-				</Panels>
-			</PanelHost>
-			<PanelHost
-				Title="Clips"
-				id="ClipPanelHost"
-				IsHidden="1"
-				PctTrans="0"
-				IsMinimized="0"
-				PanelCount="1"
-				idPalActive="ClipPanel"
-				>
-				<WindowRect Left="140" Top="240" Right="450" Bottom="400" />
-				<PredockRect Left="140" Top="240" Right="450" Bottom="400" />
-				<Panels>
-					<Panel id="ClipPanel" IsHidden="0" ViewToolbar="1" />
-				</Panels>
-			</PanelHost>
-			<PanelHost
-				Title="Window List"
-				id="WindowPanelHost"
-				IsHidden="1"
-				PctTrans="0"
-				IsMinimized="0"
-				PanelCount="1"
-				idPalActive="WindowPanel"
-				>
-				<WindowRect Left="100" Top="200" Right="450" Bottom="400" />
-				<PredockRect Left="100" Top="200" Right="450" Bottom="400" />
-				<Panels>
-					<Panel
-						id="WindowPanel"
-						IsHidden="0"
-						ViewToolbar="1"
-						>
-						<Columns>
-							<Column0 ID="0" Width="144" />
-							<Column1 ID="1" Width="144" />
-						</Columns>
-					</Panel>
-				</Panels>
-			</PanelHost>
-			<PanelHost
-				Title="FTP Browser"
-				id="FtpPanelHost"
-				IsHidden="1"
-				PctTrans="0"
-				IsMinimized="0"
-				PanelCount="1"
-				idPalActive="FtpPanel"
-				>
-				<WindowRect Left="100" Top="200" Right="450" Bottom="400" />
-				<PredockRect Left="100" Top="200" Right="450" Bottom="400" />
-				<Panels>
-					<Panel
-						id="FtpPanel"
-						IsHidden="0"
-						ViewToolbar="1"
-						>
-						<Columns>
-							<Column0 ID="0" Width="192" />
-							<Column1 ID="1" Width="48" />
-							<Column2 ID="2" Width="96" />
-						</Columns>
-					</Panel>
-				</Panels>
-			</PanelHost>
-			<PanelHost
-				Title="Directory Compare"
-				id="ComparePanelHost"
-				IsHidden="1"
-				PctTrans="0"
-				IsMinimized="0"
-				PanelCount="2"
-				idPalActive="DirComparePanel"
-				>
-				<WindowRect Left="50" Top="100" Right="750" Bottom="500" />
-				<PredockRect Left="0" Top="0" Right="0" Bottom="0" />
-				<Panels>
-					<Panel
-						id="DirComparePanel"
-						IsHidden="0"
-						ViewToolbar="1"
-						>
-						<Columns>
-							<Column0 ID="0" Width="192" />
-							<Column1 ID="1" Width="72" />
-							<Column2 ID="2" Width="72" />
-							<Column3 ID="3" Width="72" />
-							<Column4 ID="4" Width="192" />
-							<Column5 ID="5" Width="72" />
-							<Column6 ID="6" Width="72" />
-						</Columns>
-						<MruList/>
-					</Panel>
-					<Panel id="FileComparePanel" IsHidden="0" ViewToolbar="1" />
 				</Panels>
 			</PanelHost>
 		</Floating>
